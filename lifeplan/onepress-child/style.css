@@ -1,0 +1,117 @@
+/*
+ Theme Name:   OnePress Child
+ Theme URI:    https://www.famethemes.com
+ Description:  OnePress sample child theme
+ Author:       FameThemes
+ Author URI:   https://www.famethemes.com
+ Template:     onepress
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  onepress-child
+*/
+
+/* Add your custom css below
+-------------------------------------------------------------- */
+
+/*TOPのセクション名をスマホサイズ対応*/
+.section-title-area .section-title{
+	font-size:27px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+ font-family: "Calibri","メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3",Hiragino Kaku Gothic Pro,"ＭＳ Ｐゴシック",sans-serif;
+ }
+
+.team-members.row.team-layout-2 .team-member{
+	width:100%;
+}
+.byline{
+    display:none;
+}
+.page-header .entry-title,
+.page-header .page-title
+{
+	text-transform: none;
+}
+.home  div.list-article-thumb{
+	display:none;
+}
+/*最近の記事の下線削除*/
+.widget_recent_entries ul li{
+	border-bottom:0px;
+}
+/*･･･にトピックを新規作成*/
+legend{
+	background-color:#223a70;
+	font-size:13px;
+	padding:4px;
+	border-radius:5px;
+	color:#ffffff;
+}
+#profile_img{
+    border-radius:50%;
+}
+@media only screen and (min-width: 1025px) {
+/*(PC)トピック　注意点リンク*/
+	.topic_info{
+		font-size:13px;
+		background-color:#223a70;
+		color:#ffffff;
+		border-radius:5px;
+		padding:7px;
+		margin:10px 20px 10px 20px;
+	}
+	.my_btn{
+		width:260px;
+		color:#fff;
+		background-color:#c9302c;
+		border-color:#c12e2a;
+		text-decoration:none;
+		text-align:center;
+		font-size:16px;
+		font-weight:600;
+		display:block;
+		margin:0 auto 20px auto;
+		clear:both;
+		padding:6px 10px 6px 10px;
+		border-radius:2px;
+	}  
+}
+/*スマホ･タブレット用*/
+@media screen and (min-width: 0px) and (max-device-width: 1024px) {
+	/*(スマホ)トピック　注意点リンク*/
+	.topic_info{
+		font-size:13px;
+		background-color:#223a70;
+		color:#ffffff;
+		border-radius:5px;
+		padding:7px;
+		margin:10px;
+	}
+	.my_btn{
+		width:260px;
+		color:#fff;
+		background-color:#c9302c;
+		border-color:#c12e2a;
+		text-decoration:none;
+		text-align:center;
+		font-size:16px;
+		font-weight:600;
+		display:block;
+		margin:0 auto 0 auto;
+		clear:both;
+		padding:6px 10px 6px 10px;
+		border-radius:2px;
+	}  
+}
+/*ギャラリー背景*/
+.section-meta{
+	background-color:#ffffff;
+}
+/*記事タイトル下線*/
+	.widget_recent_entries ul li{
+	border-width:0 0 0.5px 0px;
+	padding:10px 15px 10px 10px;
+	border-style:dotted;
+	border-color:#555555:
+}
